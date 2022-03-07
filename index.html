@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="front-wrapper">
+          <img src="materials/teodor2.svg" alt="menatural" id="menatural">
+          <div class="title">music &<br>information design</div>
+        </div>
+        <div id="line"></div>
+        <a href="#projects" class="buttons button1">Projects</a>
+        <a href="#about" class="buttons button2">About</a>
+        <a href="#contact" class="buttons button3">Contact</a>
+
+        <div id="projects">
+            <button class="panels panel1" onclick="function1()"></button>
+            <div class="content" id="content1">
+              <div class="text text1">On this youtube channel for music composition I try to explore new musical ideas and beyond. Until you find your true voice and style, you need to undergo many trials of artistic exploration, which are very rewarding. <a class="links" href="https://www.youtube.com/channel/UCLWusrAoxn9V4cInF2m-5jw" target="_blank">Have a look</a> and join me on this journey!</div>
+              <div class="iframe-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/TLHWi-FecZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-bottom: 20px;"></iframe></div>
+              <div class="iframe-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/xlB-isPA-oY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+            <button class="panels panel2" onclick="function2()"></button>
+            <div class="text content" id="content2">Aiming to get a big picture understanding of the ancient Greeks, I decided to do research about all the various authors, philosophers, mathematicians and others and put them in chronological order. <a class="links" href="www.timelineofancientgreeks.com" target="_blank">On the website</a> you can read about every person, filter them in various ways and see whose writings still survived.</div>
+            <button class="panels panel3" onclick="function3()"></button>
+            <div class="content" id="content3">
+              <div class="text text3">In this section you can find some helpful materials that I made on various subjects in music.</div>
+                <a class="links" href="materials/Timeline of keyboard instruments.jpg" download="Timeline of keyboard instruments.jpg"><img src="materials/TOKI.jpg" alt="TOKI" class="image-links image-links1"></a>
+                <a class="links" href="materials/Harmony Functions.pdf" download="Harmony Functions.pdf"><img src="materials/ET-JI scale.jpg" alt="ET-JI" class="image-links image-links2"></a>
+                <a class="links" href="materials/Just Intonation Cents Scale.pdf" download="Just Intonation Cents Scale.pdf"><img src="materials/Diatonic.jpg" alt="Diatonic" class="image-links image-links2"></a>
+            </div>
+            <button class="panels panel4" onclick="function4()"></button>
+            <div class="content" id="content4">
+              <div class="text text4">I had a great oportunity to work with the Picturecut team from Austria on this short drama film. Making the music for this was an interesting process, filled with lessons and insights. The criminal in the story has to go through very stressful situations, while being followed by the police.</div>
+              <div class="iframe-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/_ltZb44VqhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+        </div>
+        
+        <div class="text" id="about">My main objective is to merge different concepts and make complex information simple through design for digital media. The work process to achieve this can be described as follows:<br><br>
+          <img src="materials/work process.svg" alt="work-process" class="work-process"><br><br>
+          So far I have practiced this method in the domains of music, history and their relation to other subjects. If you find my work valuable, I will be happy to help!</div>
+        <div id="contact">
+          <a class="icons" href="mailto:vulpiusteodor@gmail.com" target="_blank"><img src="materials/envelope.png" alt="mail" style="margin-top: 3px;"></a>
+          <a class="icons" href="https://www.youtube.com/channel/UCLWusrAoxn9V4cInF2m-5jw" target="_blank"><img src="materials/yt_icon_mono_light.png" alt="yt_icon_rgb" style="height: 26px; width: auto; margin-top: 6px;"></a>
+          <a class="icons" href="https://github.com/codruverde" target="_blank"><img src="materials/GitHub-Mark-32px.png" alt="github" style="height: 31px; width: auto; margin-top: 3px;"></a>
+        </div>
+    </div>
+
+
+
+<script>
+
+function function1() {
+  var element1 = document.getElementById("content1");
+  element1.classList.toggle("content-shown1");
+}
+function function2() {
+  var element2 = document.getElementById("content2");
+  element2.classList.toggle("content-shown2");
+}
+function function3() {
+  var element3 = document.getElementById("content3");
+  element3.classList.toggle("content-shown3");
+}
+function function4() {
+  var element4 = document.getElementById("content4");
+  element4.classList.toggle("content-shown4");
+}
+
+
+
+</script>
+</body>
+</html>
