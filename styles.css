@@ -280,7 +280,7 @@ body {
 
 @media screen and (max-height: 450px) {
     .container {
-        grid-template-rows: 250px auto auto 80px;
+        grid-template-rows: 200px auto auto 80px;
         justify-content: center;
         transform: none;
     }
