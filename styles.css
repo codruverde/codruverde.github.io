@@ -15,7 +15,7 @@ body {
 @font-face {
     font-family: "ProbaPro-Regular";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     src: url('font.woff2') format('woff2'), url('font.woff') format('woff');
     font-display: swap;
   }
