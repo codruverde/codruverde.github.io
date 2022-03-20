@@ -15,6 +15,7 @@ body {
 @font-face {
     font-family: "ProbaPro-Regular";
     src: url('font.woff2') format('woff2'), url('font.woff') format('woff');
+    font-display: swap;
   }
 
 :root {
@@ -45,7 +46,7 @@ body {
     align-items: center;
 }
 #menatural {
-    width: auto;
+    aspect-ratio: 1;
     height: 140px;
     opacity: 1;
 }
@@ -235,7 +236,7 @@ body {
     }
 
     .image-links {
-        height: auto; 
+        aspect-ratio: 1; 
         width: 130px;
     }
     .image-links1 {
@@ -260,8 +261,8 @@ body {
 }
 
 .work-process {
+    aspect-ratio: 566/445;
     width: 100%;
-    height: auto;
 }
 
 #contact {
