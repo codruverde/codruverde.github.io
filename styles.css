@@ -196,7 +196,7 @@ body {
     width: 100%;
     align-content: space-between;
     align-items: flex-start;
-    row-gap: 16px;
+    row-gap: 17px;
     column-gap: 20px;
   }
 
@@ -220,7 +220,7 @@ body {
         font-family: "ProbaPro-Italic";
         color: var(--main-color);
         font-size: 17px;
-        margin-bottom: 17px;
+        margin-bottom: 16px;
       }
       .videoDescription {
         font-family: "ProbaPro-Regular";
@@ -360,12 +360,18 @@ body {
 
 @media only screen and (max-width: 1100px) {
   .container {
-    width: 95vw;
+    width: 92vw;
+    height: 92vh;
+    margin-top: 4vh;
     grid-template-columns: 25% auto 10%;
   }
 
   .middleRow {
     grid-template-columns: 25% auto 10%;
+  }
+
+  #resources {
+    justify-content: space-between;
   }
 
   .videoDescriptions {
@@ -377,11 +383,12 @@ body {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 750px) {
   .container {
     grid-template-columns: 5% auto 5%;
     grid-template-rows: 20% auto 90px;
     column-gap: 0px;
+    row-gap: 0px;
   }
 
   .face {
