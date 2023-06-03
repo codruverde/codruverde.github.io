@@ -43,7 +43,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 30% auto 15%;
-  grid-template-rows: 20% auto minmax(16%, 110px);
+  grid-template-rows: 20% auto 110px;
   column-gap: 10px;
   width: 90vw;
   max-width: 1500px;
@@ -381,7 +381,6 @@ body {
   .container {
     grid-template-columns: 5% auto 5%;
     column-gap: 0px;
-    margin-top: 0;
   }
 
   .face {
