@@ -380,6 +380,7 @@ body {
 @media only screen and (max-width: 800px) {
   .container {
     grid-template-columns: 5% auto 5%;
+    grid-template-rows: 20% auto 90px;
     column-gap: 0px;
   }
 
@@ -406,12 +407,13 @@ body {
   }
 
     #projects {
-      padding-top: 75px;
+      padding-top: 55px;
+      padding-bottom: 20px;
     }
 
     .videos {
       width: 100%;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
       .video1 {
         order: 2;
@@ -442,6 +444,10 @@ body {
         order: 7;
       }
 
+    #about {
+      padding-top: 65px;
+      padding-bottom: 50px;
+    }  
     .aboutDescription {
       width: 100%;
     }
@@ -452,7 +458,6 @@ body {
     justify-self: start;
     height: fit-content;
     margin-right: 0px;
-    display: block;
     position: initial;
   }
     .button1 {
@@ -468,10 +473,7 @@ body {
       top: none;
       bottom: none;
     }
-
-    .keyNote {
-      visibility: hidden;
-    }
+    
 
   .keyboard {
     grid-column: 2/3;
