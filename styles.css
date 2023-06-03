@@ -381,6 +381,7 @@ body {
   .container {
     grid-template-columns: 5% auto 5%;
     column-gap: 0px;
+    margin-top: 0;
   }
 
   .face {
