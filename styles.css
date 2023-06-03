@@ -156,12 +156,10 @@ body {
     transform: translate3d(0,0,0);
   }
   
-  .linksContainer {
+  .links {
     margin-left: 30px;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
-  }
-  .links {
     width: max-content;
     height: 41px;
   }
@@ -401,7 +399,7 @@ body {
    margin-left: 80px;
   }
 
-    .linksContainer {
+    .links {
       margin-left: 20px;
     }
     .email {
