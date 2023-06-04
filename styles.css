@@ -104,7 +104,7 @@ body {
   justify-self: end;
   align-self: center;
   aspect-ratio: 1/1;
-  height: 70px;
+  width: 70px;
   margin-right: 20px;
 }
 
@@ -393,6 +393,8 @@ body {
     grid-column: 2/3;
     justify-self: start;
     margin-right: 0px;
+    width: 20%;
+    max-width: 70px;
   }
   
   .topRow {
@@ -489,5 +491,25 @@ body {
   @keyframes extension {
     from {width: 1px;}
     to {width: 140px;}
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    height: 80vh;
+    margin-top: 2vh;
+  }
+
+  .topRow {
+    margin-left: calc(20% + 10px);
+  }
+
+  .links {
+    width: min-content;
+    height: max-content;
+  }
+
+  .email {
+    margin-left: 0;
   }
 }
