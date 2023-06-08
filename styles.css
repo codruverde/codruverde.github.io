@@ -495,7 +495,7 @@ body {
 @media only screen and (max-width: 400px) {
   .container {
     height: 96dvh;
-    margin-top: 2vh;
+    margin-top: 2dvh;
   }
 
   .topRow {
