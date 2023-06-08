@@ -385,6 +385,8 @@ body {
     grid-template-rows: 20% auto 90px;
     column-gap: 0px;
     row-gap: 0px;
+    height: 96dvh;
+    margin-top: 2dvh;
   }
 
   .face {
@@ -493,10 +495,6 @@ body {
 }
 
 @media only screen and (max-width: 400px) {
-  .container {
-    height: 96dvh;
-    margin-top: 2dvh;
-  }
 
   .topRow {
     margin-left: calc(20% + 10px);
