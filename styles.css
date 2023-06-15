@@ -288,6 +288,9 @@ body {
     .resource4 {
       background-image: url(materials/mathPaper.jpg);
     }
+    .resource5 {
+      background-image: url(materials/Composition\ Process.jpg);
+    }
   
   .buttons {
     grid-column: 1/2;
