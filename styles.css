@@ -386,6 +386,7 @@ body {
     grid-template-rows: 100%;
     grid-template-columns: repeat(7, 27px);
     column-gap: 1px;
+    z-index: 2;
 
     & button {
       grid-row: 1/2;
