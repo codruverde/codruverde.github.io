@@ -468,6 +468,9 @@ body {
     & button:focus > div {
       animation: go 3s;
     }
+    & button:focus {
+      z-index: 2;
+    }
     
   }
 }
