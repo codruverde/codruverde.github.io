@@ -59,6 +59,11 @@ body {
   to {opacity: 1;}
 }
 
+@keyframes go {
+  from {transform: translateY(0);}
+  to {transform: translateY(-1000px);}
+}
+
 .container * {
   animation: pageLoad 2s linear;
 }
@@ -180,6 +185,7 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   scroll-behavior: smooth;
+  z-index: 1;
 }
 
 .middleRow::-webkit-scrollbar {
@@ -339,15 +345,131 @@ body {
 
 .keyboard {
   grid-column: 1/4;
-  grid-row: 3/4;
+  grid-row: 1/4;
   height: 100%;
   max-width: 1200px;
   width: 80%;
-  background-image: url(materials/keyboard.jpg);
+  /* background-image: url(materials/keyboard.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   justify-self: center;
-  /* visibility: hidden; */
+  display: grid;
+  grid-template-columns: repeat(6, fit-content(100%));
+  grid-row: 100%;
+  column-gap: 1px;
+  overflow: hidden;
+
+  & :nth-child(1) {
+    grid-column: 1/2;
+  }
+  & :nth-child(2) {
+    grid-column: 2/3;
+  }
+  & :nth-child(3) {
+    grid-column: 3/4;
+  }
+  & :nth-child(4) {
+    grid-column: 4/5;
+  }
+  & :nth-child(5) {
+    grid-column: 5/6;
+  }
+  & :nth-child(6) {
+    grid-column: 6/7;
+  }
+
+  .keys-container {
+    align-self: end;
+    grid-row: 1/2;
+    height: 110px;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(7, 27px);
+    column-gap: 1px;
+
+    & button {
+      grid-row: 1/2;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    
+    & :nth-child(1) {
+      grid-column: 1/2;
+    }
+    & :nth-child(2) {
+      grid-column: 2/3;
+    }
+    & :nth-child(3) {
+      grid-column: 3/4;
+    }
+    & :nth-child(4) {
+      grid-column: 4/5;
+    }
+    & :nth-child(5) {
+      grid-column: 5/6;
+    }
+    & :nth-child(6) {
+      grid-column: 6/7;
+    }
+    & :nth-child(7) {
+      grid-column: 7/8;
+    }
+    & :nth-child(8) {
+      grid-column: 1/3;
+    }
+    & :nth-child(9) {
+      grid-column: 2/4;
+    }
+    & :nth-child(10) {
+      grid-column: 4/6;
+    }
+    & :nth-child(11) {
+      grid-column: 5/7;
+    }
+    & :nth-child(12) {
+      grid-column: 6/8;
+    }
+    
+    & :nth-child(-n + 7) {
+      background: #8f8f8f;
+
+      & :hover {
+        background: white;
+      }
+
+      & div {
+        background: inherit;
+      }
+    }
+
+    & :nth-child(n + 8) {
+      background: var(--main-color);
+      width: 18px;
+      height: 70%;
+      align-self: start;
+      justify-self: center;
+
+      & :hover {
+        background: black;
+      }
+
+      & div {
+        background: inherit;
+      }
+    }
+
+    & button > div {
+      width: 100%;
+      height: 100%;
+    }
+
+    & button:focus > div {
+      animation: go 3s;
+    }
+    
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -382,7 +504,7 @@ body {
 @media only screen and (max-width: 750px) {
   .container {
     grid-template-columns: 5% auto 5%;
-    grid-template-rows: 20% auto 90px;
+    grid-template-rows: 20% auto 110px;
     column-gap: 0px;
     row-gap: 0px;
     height: 96dvh;
@@ -480,13 +602,11 @@ body {
       top: none;
       bottom: none;
     }
-    
 
-  .keyboard {
-    grid-column: 2/3;
-    height: 100%;
-    width: 100%;
-  }
+    .keyboard {
+      width: 90%;
+    }
+    
 
   @keyframes extension {
     from {width: 1px;}
